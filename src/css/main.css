@@ -1,0 +1,456 @@
+
+body {
+    font-family: ProximaNova;
+}
+a {
+    color: inherit;
+}
+.main-container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.image-holder {
+    overflow: hidden;
+    height: 100%;
+}
+.btn-holder button {
+    background: transparent;
+    border: 0.1em solid #ccc;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-top: 13px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.btn-holder button:hover {
+    background: #404040;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    color: #fff;
+}
+.image-holder img {
+    width: 100%;
+}
+.top-line {
+    background: #3e3d3c;
+    font-family: BebasNeueRegular;
+    height: 133px;
+    padding-top: 30px;
+    position: relative;
+    padding-bottom: 25px;
+}
+.top-line .decoration-strip {
+    height: 25px;
+    position: absolute;
+    background: url(../img/icons/strip-bg.png);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.top-line .topline-holder {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #fff;
+}
+.top-line .topline-holder .navbar-brand {
+    position: relative;
+    top: -17px;
+    left: -23px;
+}
+.top-line .topline-holder a {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.top-line .topline-holder .navbar-nav {
+    position: relative;
+    right: -46px;
+}
+.top-line .topline-holder .navbar-nav li {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+
+/*//main-slider///*/
+.main-slider .bx-wrapper {
+    box-shadow: none;
+    border: none;
+    margin-bottom: 30px;
+}
+.main-slider .bx-wrapper .bx-pager,
+.main-slider .bx-wrapper .bx-controls-auto {
+    bottom: 40px;
+}
+.main-slider .bx-wrapper .bx-pager.bx-default-pager a {
+    width: 21px;
+    height: 4px;
+    opacity: 0.2;
+    background-color: white;
+    border-radius: 0;
+}
+.main-slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.main-slider .bx-wrapper .bx-pager.bx-default-pager a.active,
+.main-slider .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    opacity: 1;
+}
+.main-slider .text-holder {
+    position: absolute;
+    height: 160px;
+    max-width: 472px;
+    color: #fff;
+    top: 222px;
+    left: 111px;
+}
+.main-slider .text-holder h1 {
+    font-family: BebasNeueRegular;
+    margin-bottom: 17px;
+}
+.main-slider .text-holder p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+
+/*//worksonmain//*/
+.worksonmain h1 {
+    color: black;
+    font-family: BebasNeueRegular;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 21px;
+}
+.worksonmain .tabs-holder {
+    text-align: center;
+    margin-bottom: 28px;
+}
+.worksonmain .tabs-holder ul {
+    list-style: none;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding-left: 0;
+}
+.worksonmain .tabs-holder ul li {
+    display: inline-block;
+    width: 176px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.work-item {
+    border: 1px solid #ccc;
+    height: 290px;
+    position: relative;
+}
+.work-item .content-holder {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 100%;
+    padding: 29px;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 75px;
+    opacity: 0;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.work-item:hover .content-holder {
+    opacity: 1;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.work-item .content-holder p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px; 
+}
+.work-item .content-holder .material,
+.work-item .content-holder .size {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.work-item .content-holder .size {
+    float: right;
+    text-align: right;
+}
+.work-item .content-holder .btn-holder {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    padding: 10px;
+    border: 1px solid #fff;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.work-item .content-holder .text-holder {
+    overflow: hidden;
+    height: 100%;
+}
+.worksonmain .tabs-holder ul {
+    font-size: 0;
+}
+.worksonmain .tabs-holder ul li {
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.worksonmain .tabs-holder ul li.active,
+.worksonmain .tabs-holder ul li:hover {
+    background: #404040;
+    color: #fff;
+    text-align: center;
+    color: white;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.worksonmain .btn-holder {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 51px;
+}
+.worksonmain .btn-holder button {
+    min-width: 188px;
+}
+
+/*//content-scroll//*/
+.content-scroll {
+    padding: 96px 0px 68px 65px;
+    position: relative;
+    background: url(../img/content/scroll-bg.jpg);
+    background-size: cover;
+}
+.content-scroll .rail-holder {
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    height: 548px;
+    position: relative;
+    z-index: 1;
+}
+.content-scroll .rail-holder .scroll-rail {
+    position: relative;
+}
+.content-scroll .casp-line {
+    position: relative;
+}
+.content-scroll .casp-line:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background: #555;
+    bottom: 5px;
+}
+.content-scroll .rail-holder .scroll-rail {
+    white-space: nowrap;
+    font-size: 0;
+    padding-bottom: 10px;
+}
+.content-scroll .rail-holder .scroll-rail .rail-block {
+    display: inline-block;
+    width: 331px;
+    height: 500px;
+    vertical-align: top;
+}
+.content-scroll .rail-holder .scroll-rail .rail-block .tick-block,
+.content-scroll .rail-holder .scroll-rail .rail-block .tack-block {
+    height: 250px;
+    background: #fff;
+}
+.content-scroll .rail-holder .scroll-rail .rail-block .tack-block .image-holder img {
+    width: auto;
+}
+.content-scroll .rail-holder .scroll-rail .rail-block img {
+    object-fit: contain;
+}
+
+.content-scroll .rail-holder .scroll-rail .rail-block .ins-text {
+    max-height: 100%;
+    overflow: hidden;
+}
+.content-scroll .rail-holder .scroll-rail .rail-block .tick-block {
+    padding: 52px;
+    padding-top: 38px;
+    padding-bottom: 48px;
+}
+.content-scroll .rail-holder .scroll-rail .rail-block h1 {
+    margin-top: 0;
+    font-family: BebasNeueRegular;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 43px;
+}
+.content-scroll .rail-holder .scroll-rail .rail-block p {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    white-space: normal;
+}
+.content-scroll .rail-holder::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.content-scroll .rail-holder::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+}
+
+.content-scroll .rail-holder::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+    width: 50px;
+}
+
+
+/*//newsonmain///*/
+.newsonmain {
+    background: #fff;
+    margin-bottom: 40px;
+    margin-top: 44px;
+}
+.newsonmain .head {
+    position: relative;
+    padding-right: 190px;
+    margin-bottom: 43px;
+}
+.newsonmain .head .btn-holder {
+    position: absolute;
+    right: 0;
+    top: 1px;
+}
+.newsonmain .head .btn-holder button {
+    min-width: 188px;
+}
+.newsonmain .head h1 {
+    color: black;
+    font-family: BebasNeueRegular;
+    font-size: 40px;
+    font-weight: 400;
+}
+.newsonmain .news-holder {
+    margin: -28px;
+}
+.newsonmain .news-holder .news-item {
+    margin: 28px;
+    width: 289px;
+    float: left;
+}
+.newsonmain .news-holder .news-item .image-holder {
+    margin-bottom: 14px;
+}
+.newsonmain .news-holder .news-item .desc-holder {
+    margin-bottom: 16px;
+}
+.newsonmain .news-holder .news-item .desc-holder .time {
+    position: relative;
+    padding-left: 28px;
+}
+.newsonmain .news-holder .news-item .desc-holder .time img {
+    position: absolute;
+    left: 2px;
+    top: 0px;
+}
+.newsonmain .news-holder .news-item .desc-holder .time,
+.newsonmain .news-holder .news-item .desc-holder .tag {
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+}
+.newsonmain .news-holder .news-item .desc-holder .tag {
+    float: right;
+    text-align: right;
+}
+.newsonmain .news-holder .news-item h5 {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/*//footer//*/
+.footer {
+    background: url(../img/icons/foot-bg.png);
+    color: #fff;
+    padding-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+.footer .info-holder {
+    position: relative;
+    padding-right: 125px;
+}
+.footer .info-holder li h4 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 0;
+}
+.footer .info-holder > ul > li {
+    margin-right: 63px;
+    margin-top: 5px;
+}
+.footer .info-holder > ul > li > ul > li {
+    margin-bottom: 10px;
+}  
+.footer .info-holder > ul > li > ul > li a {
+    text-decoration: none;
+}
+.footer .info-holder .corn-info {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+}
+.footer .info-holder .corn-info a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: BebasNeueRegular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 9px;
+}
+.footer .dev-info,
+.footer .copyrights {
+    width: 50%;
+    float: left;
+    color: #ababab;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.footer .copyrights {
+    float: right;
+    text-align: right;
+}
+.footer hr {
+    margin-top: 14px;
+    margin-bottom: 13px;
+}
